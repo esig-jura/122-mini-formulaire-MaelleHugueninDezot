@@ -9,7 +9,9 @@
 const formulaire = document.querySelector('form');
 const txtMDP = document.querySelector('#mdp');
 const txtMDPConfirm = document.querySelector('#mdpc');
-console.log(formulaire, txtMDP, txtMDPConfirm);
+const listeBackground = document.querySelector('#background');
+const body = document.querySelector('body');
+console.log(formulaire, txtMDP, txtMDPConfirm, listeBackground, body);
 
 //Ecouter l'envoi du formulaire
 formulaire.addEventListener('submit', (event) => {
@@ -53,3 +55,10 @@ formulaire.addEventListener('submit', (event) => {
 
 
 });
+
+// Ecouter le changement de valeur dans la liste déroulante
+listeBackground.addEventListener('change', () => {
+    //Remplacer l'image de fond du body
+    body.style.backgroundImage = 'url(./img/backgrounds/3.jpg)'
+
+})
