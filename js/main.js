@@ -59,6 +59,6 @@ formulaire.addEventListener('submit', (event) => {
 // Ecouter le changement de valeur dans la liste déroulante
 listeBackground.addEventListener('change', () => {
     //Remplacer l'image de fond du body
-    body.style.backgroundImage = 'url(./img/backgrounds/3.jpg)'
+    body.style.backgroundImage = 'url(./img/backgrounds/' + listeBackground.value +')';
 
 })
